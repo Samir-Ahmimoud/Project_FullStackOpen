@@ -4,6 +4,16 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+function Part(props){
+  return(
+    <>
+    <p>
+        {props.part} {props.excercise}
+    </p>
+    </>
+  )
+}
+
 function Header(props){
   return(
     <>
@@ -15,15 +25,9 @@ function Header(props){
 function Content(props){
   return(
     <>
-      <p>
-        {props.parts[0]} {props.excercises[0]}
-      </p>
-      <p>
-        {props.parts[1]} {props.excercises[1]}
-      </p>
-      <p>
-        {props.parts[2]} {props.excercises[2]}
-      </p>
+    <Part part={props.parts[0]} excercise={props.excercises[0]}/>
+    <Part part={props.parts[1]} excercise={props.excercises[1]}/>
+    <Part part={props.parts[2]} excercise={props.excercises[2]}/>
     </>
   )
 }
