@@ -1,1 +1,1 @@
-Hello world
+Starting course FullStack open
